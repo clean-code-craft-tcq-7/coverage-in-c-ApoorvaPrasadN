@@ -49,7 +49,11 @@ void checkAndAlert(
       break;
   }
 }
-
+void get_BatteryTemperature()
+{
+float Battery_TemperatureValue = 23;
+Battery_TemperatureValue 
+}
 void sendToController(BreachType breachType) {
   const unsigned short header = 0xfeed;
   printf("%x : %x\n", header, breachType);
@@ -69,4 +73,9 @@ void sendToEmail(BreachType breachType) {
     case NORMAL:
       break;
   }
+}
+int main()
+{
+AlertTarget alertTarget_type = TO_CONTROLLER; 
+  
 }
