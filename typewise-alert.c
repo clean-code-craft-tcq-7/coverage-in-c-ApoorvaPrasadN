@@ -49,10 +49,10 @@ void checkAndAlert(
       break;
   }
 }
-void get_BatteryTemperature()
+float get_BatteryTemperature()
 {
-float Battery_TemperatureValue = 23;
-Battery_TemperatureValue 
+float Battery_TemperatureValue =23;
+return Battery_TemperatureValue;
 }
 void sendToController(BreachType breachType) {
   const unsigned short header = 0xfeed;
@@ -77,5 +77,7 @@ void sendToEmail(BreachType breachType) {
 int main()
 {
 AlertTarget alertTarget_type = TO_CONTROLLER; 
-  
+float Temperaturevalue =get_BatteryTemperature();
+
+
 }
